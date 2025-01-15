@@ -1,0 +1,46 @@
+<!-- prettier-ignore -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>HTMLmock</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="/assets/base.css?20250101">
+    <style>
+      .title { color: red; }
+      .main { background: url("/assets/images/main.jpg"); }
+    </style>
+  </head>
+  <body>
+    <!-- + Header -->
+    <header class="header" style="background: url(/assets/images/header.jpg);">
+      <h1 class="title">HTMLmock</h1>
+      <p><span>Clean</span><span>HTML</span></p>
+      <a href="/">
+        <svg>
+          <use xlink:href="/assets/images/icons.svg?20250101#home"></use>
+        </svg>
+      </a>
+    </header>
+    <!-- - Header -->
+    <main class="main">
+      <div>
+        <img src="./assets/images/thumb.png" width="80" height="80" alt="">
+        <img src="/assets/images/thumb.png?20250101" width="80" height="80" alt="">
+      </div>
+      <div>
+        <img srcset="/assets/images/image-320x157.png 320w, /assets/images/image-400x196.png 400w, /assets/images/image-640x314.png 640w, /assets/images/image-800x392.png 800w, /assets/images/image-1024x502.png 1024w, /assets/images/image-1280x627.png 1280w, /assets/images/image-1440x706.png 1440w, /assets/images/image-1920x941.png 1920w, /assets/images/image-2208x1080.png 2208w" src="/assets/images/image-2208x1080.png" sizes="(min-width: 2208px) 2208px, 100vw" width="800" height="392" alt="" decoding="async" loading="lazy">
+      </div>
+      <div>
+        <picture>
+          <source srcset="/assets/images/image-320x157.webp 320w, /assets/images/image-400x196.webp 400w, /assets/images/image-640x314.webp 640w, /assets/images/image-800x392.webp 800w, /assets/images/image-1024x502.webp 1024w, /assets/images/image-1280x627.webp 1280w, /assets/images/image-1440x706.webp 1440w, /assets/images/image-1920x941.webp 1920w, /assets/images/image-2208x1080.webp 2208w" sizes="(min-width: 2208px) 2208px, 100vw" width="2208" height="1080" type="image/webp">
+          <img srcset="/assets/images/image-320x157.png 320w, /assets/images/image-400x196.png 400w, /assets/images/image-640x314.png 640w, /assets/images/image-800x392.png 800w, /assets/images/image-1024x502.png 1024w, /assets/images/image-1280x627.png 1280w, /assets/images/image-1440x706.png 1440w, /assets/images/image-1920x941.png 1920w, /assets/images/image-2208x1080.png 2208w" src="/assets/images/image-2208x1080.png" sizes="(min-width: 2208px) 2208px, 100vw" width="2208" height="1080" alt="" decoding="async" loading="lazy">
+        </picture>
+      </div>
+    </main>
+    <script src="./assets/common.js"></script>
+    <script src="/assets/animations.js?20250101"></script>
+    <script>console.log("test")</script>
+  </body>
+</html>
